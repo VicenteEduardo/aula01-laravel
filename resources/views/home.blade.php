@@ -1,227 +1,970 @@
-<!doctype html>
-<html lang="en">
+@extends('layouts.marge.site')
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
+@section('conteudo')
+    <!--SLIDER-->
+    <section>
+        <div class="lgx-slider">
+            <!--lgx-slider-content -->
+            <div class="lgx-banner-style">
+                <div class="lgx-inner">
 
-<body>
+                    <div id="lgx-main-slider" class="owl-carousel">
+                        <!--lgx-slider-navbottom-->
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactos</a>
-                    </li>
+                        <!--SLIDER ITEM 1-->
 
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Localização da Empresa</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+                        <div class="lgx-item-common">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="site/img/banner4.jpg" alt="slide" />
+                                    <figcaption>
+                                        <div class="lgx-container">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
 
+                                                    <div class="lgx-banner-info">
+                                                        <!--lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
+                                                        <h3 class="subtitle lgx-delay lgx-fadeInDownBig">
+                                                            comidas deliciosas</h3>
+                                                        <h2 class="title lgx-delay lgx-fadeInDownBig">Especialidades de
+                                                            Alimentos</h2>
+                                                        <p class="text lgx-delay lgx-fadeInDownBig">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                                            dolor dolorem <br> laudantium officia voluptas. Aspernatur
+                                                            cupiditate ducimus eligendi reprehenderit!
+                                                        </p>
+                                                        <div class="btn-area lgx-delay lgx-fadeInDownBig">
+                                                            <a class="btn lgx-btn" href="#"><span>
+                                                                    Reserva</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!--SLIDER ITEM 1 End-->
 
+                        <!--SLIDER ITEM 2-->
+                        <div class="lgx-item-common">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="site/img/banner4.jpg" alt="slide" />
+                                    <figcaption>
+                                        <div class="lgx-container">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
 
+                                                    <div class="lgx-banner-info">
+                                                        <!--lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
+                                                        <h3 class="subtitle lgx-delay lgx-fadeInUpBig">comidas deliciosas
+                                                        </h3>
+                                                        <h2 class="title lgx-delay lgx-fadeInUpBig">Especialidades de
+                                                            Alimentos</h2>
+                                                        <p class="text lgx-delay lgx-fadeInUpBig">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                                            dolor dolorem <br> laudantium officia voluptas. Aspernatur
+                                                            cupiditate ducimus eligendi reprehenderit!
+                                                        </p>
+                                                        <div class="btn-area lgx-delay lgx-fadeInUpBig">
+                                                            <a class="btn lgx-btn" href="#"><span>Reserva</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!--SLIDER ITEM 2 End-->
 
+                        <!--SLIDER ITEM 3-->
+                        <div class="lgx-item-common">
+                            <div class="slider-text-single">
+                                <figure>
+                                    <img src="site/img/banner4.jpg" alt="slide" />
+                                    <figcaption>
+                                        <div class="lgx-container">
+                                            <div class="lgx-hover-link">
+                                                <div class="lgx-vertical">
+                                                    <!--All Animation class-->
+                                                    <!--lgx-fadeIn lgx-fadeInDown lgx-fadeInDownBig lgx-fadeInLeft lgx-fadeInLeftBig lgx-fadeInRight lgx-fadeInRightBig lgx-fadeInUp lgx-fadeInUpBig
+                                                        lgx-flipInX lgx-flipInY lgx-lightSpeedIn lgx-rotateIn lgx-rotateInDownLeft lgx-rotateInDownRight lgx-rotateInUpLeft lgx-rotateInUpRight lgx-slideInLeft
+                                                        lgx-slideInRight lgx-bounceIn lgx-bounceInDown lgx-bounceInLeft lgx-bounceInRight lgx-bounceInUp lgx-zoomIn lgx-zoomInDown lgx-zoomInLeft
+                                                        lgx-zoomInRight lgx-zoomInUp-->
+                                                    <div class="lgx-banner-info">
+                                                        <!--lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
+                                                        <h3 class="subtitle lgx-delay lgx-bounceIn">Delicious Foods</h3>
+                                                        <h2 class="title lgx-delay lgx-bounceIn">Especialidades de Alimentos
+                                                        </h2>
+                                                        <p class="text lgx-delay lgx-bounceIn">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                                                            dolor dolorem <br> laudantium officia voluptas. Aspernatur
+                                                            cupiditate ducimus eligendi reprehenderit!
+                                                        </p>
+                                                        <div class="btn-area lgx-delay lgx-bounceIn">
+                                                            <a class="btn lgx-btn" href="#"><span>Reserva</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!--SLIDER ITEM 3 End-->
 
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/img.png" class="d-block w-100" alt="..." height="700">
-            </div>
-            <div class="carousel-item">
-                <img src="img/img2.jpg" class="d-block w-100" alt="..." height="700">
-            </div>
-            <div class="carousel-item">
-                <img src="img/img.png" class="d-block w-100" alt="..." height="700">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="row">
-        <div class="col-4">
-            <h4>Nome da Empresa </h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nam tempore placeat. Quae obcaecati,
-                harum illum reiciendis rerum illo at similique ab totam sequi voluptas autem repellat dolores optio.
-                Iure?</p>
-
-        </div>
-        <div class="col-4">
-            <h4>Contactos da Empresa</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nam tempore placeat. Quae obcaecati,
-                harum illum reiciendis rerum illo at similique ab totam sequi voluptas autem repellat dolores optio.
-                Iure?</p>
-
-        </div>
-        <div class="col-4">
-            <h4>Localização da Empresa</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi nam tempore placeat. Quae obcaecati,
-                harum illum reiciendis rerum illo at similique ab totam sequi voluptas autem repellat dolores optio.
-                Iure?</p>
-
-        </div>
-
-
-    </div>
-
-
-
-
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Get connected with us on social networks:</span>
-            </div>
-            <!-- Left -->
-
-            <!-- Right -->
-            <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-
-        <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Company name
-                        </h6>
-                        <p>
-                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit.
-                        </p>
                     </div>
-                    <!-- Grid column -->
+                    <!--//.lgx-main-slider-->
 
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Products
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Angular</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">React</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Vue</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful links
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Pricing</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@example.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-                    </div>
-                    <!-- Grid column -->
+                    <!-- //.CONTAINER -->
                 </div>
-                <!-- Grid row -->
+                <!-- //.INNER -->
             </div>
-        </section>
-        <!-- Section: Links  -->
-
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+    </section>
+    <!--SLIDER END-->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
-</body>
+    <!--ABOUT-->
+    <section>
+        <div id="lgx-about" class="lgx-about lgx-about-video">
+            <!--lgx-about2 lgx-about-video-->
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <div class="lgx-about-area lgx-about-area-video">
+                                <div class="lgx-heading">
+                                    <h2 class="heading-title">História do restaurante</h2>
+                                </div>
+                                <div class="lgx-about-content">
+                                    <blockquote class="about">
+                                        Accumsan quis, vulputate sit amet sapien. Curabitur euismod vulputate .
+                                    </blockquote>
+                                    <p class="text">
+                                        Pellentesque habitant morbi tristique senectus netus et malesuada fames turpis
+                                        egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                                        ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+                                        Mauris Eonec eu ribero sit amet quam egestas semper. Aenean are ultricies mi vitae
+                                        est tristique senectus et netus et malesuada placerat leo.
+                                    </p>
+                                    <a class="btn lgx-btn lgx-btn-simple" href="about.html"><span>Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <div class="lgx-video-area-bg lgx-video-trans">
+                                <figure>
+                                    <a href="#"><img src="site/img/about-video-bg2.jpg" alt="Special Food"></a>
+                                    <figcaption>
+                                        <div class="video-icon">
+                                            <div class="lgx-vertical">
+                                                <a id="myModalLabel" class="icon" href="#" data-toggle="modal"
+                                                    data-target="#lgx-modal">
+                                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <!-- Modal-->
+                                <div id="lgx-modal" class="modal fade lgx-modal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe id="modalvideo" src="https://www.youtube.com/embed/GJW2i5urzVk"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- //.Modal-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </section>
+    <!--ABOUT END-->
 
-</html>
+
+
+    <!--OFFER-->
+    <section>
+        <div id="lgx-speacial" class="lgx-speacial">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading-title">Combo especial</h2>
+                                <h4 class="heading-subtitle">
+                                    Alguns cursos modernos e populares oferecidos</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lgx-owlspeacial" class="owl-carousel lgx-owlspeacial section-gap">
+                    <!--lgx-owlspeacial-circle-->
+
+                    <div class="item">
+                        <div class="lgx-single-speacial">
+                            <figure>
+                                <a href="menuitem.html"><img src="site/img/speacial1.jpg" alt="Offers" /></a>
+                                <figcaption>
+                                    <div class="speacial-price">
+                                        <span>$</span> 250
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <div class="speacial-info">
+                                <h3 class="title"><a href="menuitem.html">American Burger Speacility</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.Item-->
+
+                    <div class="item">
+                        <div class="lgx-single-speacial">
+                            <figure>
+                                <a href="menuitem.html"><img src="site/img/speacial2.jpg" alt="Offers" /></a>
+                                <figcaption>
+                                    <div class="speacial-price">
+                                        <span>$</span> 250
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <div class="speacial-info">
+                                <h3 class="title"><a href="menuitem.html">Italian Burger Speacility</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.Item-->
+
+                    <div class="item">
+                        <div class="lgx-single-speacial">
+                            <figure>
+                                <a href="menuitem.html"><img src="site/img/speacial3.jpg" alt="Offers" /></a>
+                                <figcaption>
+                                    <div class="speacial-price">
+                                        <span>$</span> 250
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <div class="speacial-info">
+                                <h3 class="title"><a href="menuitem.html">American Pizza Speacility</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.Item-->
+
+                    <div class="item">
+                        <div class="lgx-single-speacial">
+                            <figure>
+                                <a href="menuitem.html"><img src="site/img/speacial4.jpg" alt="Offers" /></a>
+                                <figcaption>
+                                    <div class="speacial-price">
+                                        <span>$</span> 250
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <div class="speacial-info">
+                                <h3 class="title"><a href="menuitem.html">American Burger Speacility</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.Item-->
+
+                    <div class="item">
+                        <div class="lgx-single-speacial">
+                            <figure>
+                                <a href="menuitem.html"><img src="site/img/speacial5.jpg" alt="Offers" /></a>
+                                <figcaption>
+                                    <div class="speacial-price">
+                                        <span>$</span> 250
+                                    </div>
+                                </figcaption>
+                            </figure>
+                            <div class="speacial-info">
+                                <h3 class="title"><a href="menuitem.html">American Burger Speacility</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.Item-->
+
+                </div>
+                <!--l//#lgx-OWL NEWS-->
+
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </section>
+    <!--OFFER END-->
+
+
+
+
+
+    <!--MENU ITEMS-->
+    <section>
+        <div id="lgx-menu" class="lgx-menu lgx-menu-white">
+            <!--lgx-menu-white-->
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">Menu Oferecido</h2>
+                                <h4 class="heading-subtitle">
+                                    Alguns cursos modernos e populares oferecidos</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <div class="container-fluids">
+                    <div class="lgx-tab lgx-tab-another-grid">
+                        <!--lgx-tab-another-grid lgx-tab-another lgx-tab-another2-->
+                        <div class="lgx-filter-area lgx-autofixed">
+                            <ul id="lgx-filter" class="lgx-filter list-inline">
+                                <li class="active"><a class="lgx-filter-item" href="javascript:void(0)"
+                                        data-filter="*">All Items<span>Fresh & Delicious</span></a></li>
+                                <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                        data-filter=".breakfast">Pizza<span>Fresh & Delicious</span></a></li>
+                                <li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".lunch">Soup
+                                        <span>Fresh & Delicious</span></a></li>
+                                <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                        data-filter=".dinner">Kabab<span>Fresh & Delicious</span></a></li>
+                                <li><a class="lgx-filter-item" href="javascript:void(0)"
+                                        data-filter=".drinks">Stack<span>Fresh & Delicious</span></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="lgx-menu-container">
+
+                            <div id="lgx-grid-wrapper" class="lgx-grid-wrapper lgx-grid-wrapper-gap">
+                                <!--lgx-grid-wrapper-gap-->
+                                <div class="lgx-grid-item lgx-grid-item-col4 breakfast">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu11.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Salad With Vagitable</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 lunch">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu12.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Strawberry Shortcake</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 drinks breakfast">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu13.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Roasted prawns coriander</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 dinner">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu14.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Curd cheese dumplings</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 lunch breakfast">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu15.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Salad with blue cheese</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 drinks">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu16.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Chocolate cheesecake</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+                                <div class="lgx-grid-item lgx-grid-item-col4 drinks dinner">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu17.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Mince & steak pie</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+                                <div class="lgx-grid-item lgx-grid-item-col4 drinks dinner">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu18.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Veal mini escalopes</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+                                <div class="lgx-grid-item lgx-grid-item-col4 dinner">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu14.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Pumpkin and goat cheese</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 lunch breakfast">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu15.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Teriyaki salmon</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+                                <div class="lgx-grid-item lgx-grid-item-col4 dinner">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu13.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Ravioli filled with baked</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+
+                                <div class="lgx-grid-item lgx-grid-item-col4 lunch breakfast">
+                                    <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
+                                    <div class="lgx-single-menu-another">
+                                        <a href="#">
+                                            <figure>
+                                                <img src="site/img/menu/menu12.jpg" alt="course">
+                                                <figcaption>
+
+                                                </figcaption>
+                                            </figure>
+                                            <div class="menu-info">
+                                                <div class="info-left">
+                                                    <h3 class="title">Teriyaki salmon</h3>
+                                                    <p class="text">Accumsan quis, vulputate sit amet sapien. Curabitur
+                                                        euismod vulputate nulla, non fringilla neque</p>
+                                                </div>
+                                                <div class="menu-price">
+                                                    <span>$</span>50
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--//ITEM-->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//.MENU ITEMS END-->
+
+
+
+
+    <!--Reserva-->
+    <section>
+        <div id="lgx-Reserva" class="lgx-Reserva lgx-Reserva-another">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">Reservar uma mesa</h2>
+                                <h4 class="heading-subtitle">
+                                    Alguns cursos modernos e populares oferecidos</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-offset-1 col-md-10">
+                            <div class="lgx-Reserva-area lgx-Reserva-area-another">
+                                <!--lgx-Reserva-area-another-->
+                                <div class="open-close-time">
+                                    <p>Monday- Friday: <span>08am - 12pm</span></p>
+                                    <p>Saturday - Sunday: <span>10am - 11pm</span></p>
+                                </div>
+                                <form id="Reservabooking">
+                                    <div class="form-group  lgx-form-left">
+                                        <input class="form-control" name="fb_name" id="foodiebooking_name"
+                                            placeholder="Enter Your Name" aria-required="true" type="text">
+                                    </div>
+                                    <div class="form-group lgx-form-right">
+                                        <input class="form-control" name="fb_email" id="foodiebooking_email"
+                                            placeholder="Email Address" aria-required="true" type="email">
+                                    </div>
+                                    <div class="form-group lgx-form-left">
+                                        <input class="form-control" name="fb_phone" id="foodiebooking_phone"
+                                            placeholder="Telephone Number" type="text">
+                                    </div>
+                                    <div class="form-group lgx-form-right">
+                                        <select class="form-control" name="fb_person" id="foodiebooking_person"
+                                            aria-required="true">
+                                            <option value="">Number of Guests</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="8">9</option>
+                                            <option value="10">10</option>
+                                            <option value="more">More than 10</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group lgx-form-full lgx-form-left">
+                                        <div class="input-group date" id="datetimepicker">
+                                            <input name="fb_date" id="Reservabooking_date" class="form-control"
+                                                placeholder="Date format ( mm-dd-yyyy )." aria-required="true"
+                                                type="text">
+                                            <span class="input-group-addon">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group lgx-form-right">
+                                        <select class="form-control" name="fb_time" id="foodiebooking_time"
+                                            aria-required="true">
+                                            <option value="">Time</option>
+                                            <option value="1">Breakfast</option>
+                                            <option value="2">Lunch</option>
+                                            <option value="3">Dinner</option>
+                                        </select>
+                                    </div>
+                                    <div class="lgx-form-group">
+                                        <!--<input  class="lgx-btn lgx-submit" value="Booking Submit" type="submit">-->
+                                        <a class="btn lgx-btn" href="#"><span>Submit</span></a>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </section>
+    <!--Reserva END-->
+
+
+
+    <!--NEWS-->
+    <section>
+        <div id="lgx-news" class="lgx-news">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">
+                                    Atualizando notícias</h2>
+                                <h4 class="heading-subtitle">
+                                    Últimas atualizações de notícias que você não pode perder!</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div id="lgx-owlnews" class="lgx-owlnews lgx-owlnews-thumb">
+                            <div class="item">
+                                <div class="lgx-news-single lgx-news-single-thumb">
+                                    <!--lgx-news-single-thumb-->
+                                    <div class="date">
+                                        <h4>Aug <span>17</span></h4>
+                                    </div>
+                                    <div class="news-info">
+                                        <figure>
+                                            <a href="news-single.html"><img src="site/img/news1.jpg"
+                                                    alt="news" /></a>
+                                        </figure>
+                                        <h3 class="title"><a href="news-single.html">Brace for the oil, food and
+                                                financial Crash of 2018</a></h3>
+                                        <p class="text">Yet the full, striking import of the report, concerning the
+                                            world’s permanent entry into a new age of global decline, was never really
+                                            explained. The report didn’t just ...</p>
+                                        <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.Item-->
+                            <div class="item">
+                                <div class="lgx-news-single lgx-news-single-thumb">
+                                    <!--lgx-news-single-thumb-->
+                                    <div class="date">
+                                        <h4>Nov <span>12</span></h4>
+                                    </div>
+                                    <div class="news-info">
+                                        <figure>
+                                            <a href="news-single.html"><img src="site/img/news2.jpg"
+                                                    alt="news" /></a>
+                                        </figure>
+                                        <h3 class="title"><a href="news-single.html">Why the Next President Will Need a
+                                                National Food Policy</a></h3>
+                                        <p class="text">Yet the full, striking import of the report, concerning the
+                                            world’s permanent entry into a new age of global decline, was never really
+                                            explained. The report didn’t just ...</p>
+                                        <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.Item-->
+                            <div class="item">
+                                <div class="lgx-news-single lgx-news-single-thumb">
+                                    <!--lgx-news-single-thumb-->
+                                    <div class="date">
+                                        <h4>Dec <span>14</span></h4>
+                                    </div>
+                                    <div class="news-info">
+                                        <figure>
+                                            <a href="news-single.html"><img src="site/img/news1.jpg"
+                                                    alt="news" /></a>
+                                        </figure>
+                                        <h3 class="title"><a href="news-single.html">The Beginners Guide to Composition
+                                                in Food Photography</a></h3>
+                                        <p class="text">Yet the full, striking import of the report, concerning the
+                                            world’s permanent entry into a new age of global decline, was never really
+                                            explained. The report didn’t just ...</p>
+                                        <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.Item-->
+                            <div class="item">
+                                <div class="lgx-news-single lgx-news-single-thumb">
+                                    <!--lgx-news-single-thumb-->
+                                    <div class="date">
+                                        <h4>Oct <span>02</span></h4>
+                                    </div>
+                                    <div class="news-info">
+                                        <figure>
+                                            <a href="news-single.html"><img src="site/img/news2.jpg"
+                                                    alt="news" /></a>
+                                        </figure>
+                                        <h3 class="title"><a href="news-single.html">Why our food is the single biggest
+                                                election issue not on the table</a></h3>
+                                        <p class="text">Yet the full, striking import of the report, concerning the
+                                            world’s permanent entry into a new age of global decline, was never really
+                                            explained. The report didn’t just ...</p>
+                                        <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read
+                                                More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//.Item-->
+                        </div>
+                        <!--l//#lgx-OWL NEWS-->
+                    </div>
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section>
+    <!--NEWS END-->
+
+
+
+    <!--TESTIMONIALS -->
+    <section>
+        <div id="lgx-testimonial" class="lgx-testimonial">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading-title">What Clients Say</h2>
+                                <h4 class="heading-subtitle">Latest News Updates You Dont Miss Out!</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                    <div class="row">
+                        <div id="lgx-owltestimonial" class="lgx-owltestimonial lgx-owlnews">
+
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span>This is the best Restaurant in the world</span> Proin sodales dapibus magna, et
+                                        porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam
+                                        ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet
+                                        rhoncus. Donec at tempus felis.</p>
+                                    <div class="author">
+                                        <img src="site/img/testimonials/author1.jpg" alt="author">
+                                        <h4><a href="#"></a>Jonathon Doe</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                                <!--//.Testimonial-single-->
+                            </div>
+                            <!--//.Item-->
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span>This is the best Restaurant in the world</span> Proin sodales dapibus magna, et
+                                        porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam
+                                        ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet
+                                        rhoncus. Donec at tempus felis.</p>
+                                    <div class="author">
+                                        <img src="site/img/testimonials/author1.jpg" alt="author">
+                                        <h4><a href="#"></a>Jonathon Doe</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                                <!--//.Testimonial-single-->
+                            </div>
+                            <!--//.Item-->
+                            <div class="item">
+                                <!--Testimonial-single-->
+                                <blockquote class="lgx-testi-single">
+                                    <p><span>This is the best Restaurant in the world</span> Proin sodales dapibus magna, et
+                                        porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam
+                                        ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet
+                                        rhoncus. Donec at tempus felis.</p>
+                                    <div class="author">
+                                        <img src="site/img/testimonials/author1.jpg" alt="author">
+                                        <h4><a href="#"></a>Jonathon Doe</h4>
+                                        <div class="rate">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </blockquote>
+                                <!--//.Testimonial-single-->
+                            </div>
+                            <!--//.Item-->
+                        </div>
+                        <!--l//#lgx-OWL NEWS-->
+                    </div>
+                </div><!-- //.CONTAINER -->
+            </div><!-- //.INNER -->
+        </div>
+    </section>
+    <!--TESTIMONIALS END-->
+@endsection
