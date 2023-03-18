@@ -221,91 +221,30 @@
                 <div id="lgx-owlspeacial" class="owl-carousel lgx-owlspeacial section-gap">
                     <!--lgx-owlspeacial-circle-->
 
-                    <div class="item">
-                        <div class="lgx-single-speacial">
-                            <figure>
-                                <a href="menuitem.html"><img src="site/img/speacial1.jpg" alt="Offers" /></a>
-                                <figcaption>
-                                    <div class="speacial-price">
-                                        <span>$</span> 250
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="speacial-info">
-                                <h3 class="title"><a href="menuitem.html">American Burger Speacility</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//.Item-->
+
+
+
+@foreach ($pratodias as  $item)
+
+
 
                     <div class="item">
                         <div class="lgx-single-speacial">
                             <figure>
-                                <a href="menuitem.html"><img src="site/img/speacial2.jpg" alt="Offers" /></a>
+                                <a href="#"><img src="/storage/{{ $item->photo }}" alt="Offers" /></a>
                                 <figcaption>
                                     <div class="speacial-price">
-                                        <span>$</span> 250
+                                        <span>AO {{ $item->price }}</span>
                                     </div>
                                 </figcaption>
                             </figure>
                             <div class="speacial-info">
-                                <h3 class="title"><a href="menuitem.html">Italian Burger Speacility</a></h3>
+                                <h3 class="title"><a href="#">{{ $item->name }}</a></h3>
                             </div>
                         </div>
                     </div>
                     <!--//.Item-->
-
-                    <div class="item">
-                        <div class="lgx-single-speacial">
-                            <figure>
-                                <a href="menuitem.html"><img src="site/img/speacial3.jpg" alt="Offers" /></a>
-                                <figcaption>
-                                    <div class="speacial-price">
-                                        <span>$</span> 250
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="speacial-info">
-                                <h3 class="title"><a href="menuitem.html">American Pizza Speacility</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//.Item-->
-
-                    <div class="item">
-                        <div class="lgx-single-speacial">
-                            <figure>
-                                <a href="menuitem.html"><img src="site/img/speacial4.jpg" alt="Offers" /></a>
-                                <figcaption>
-                                    <div class="speacial-price">
-                                        <span>$</span> 250
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="speacial-info">
-                                <h3 class="title"><a href="menuitem.html">American Burger Speacility</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//.Item-->
-
-                    <div class="item">
-                        <div class="lgx-single-speacial">
-                            <figure>
-                                <a href="menuitem.html"><img src="site/img/speacial5.jpg" alt="Offers" /></a>
-                                <figcaption>
-                                    <div class="speacial-price">
-                                        <span>$</span> 250
-                                    </div>
-                                </figcaption>
-                            </figure>
-                            <div class="speacial-info">
-                                <h3 class="title"><a href="menuitem.html">American Burger Speacility</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//.Item-->
-
+                    @endforeach
                 </div>
                 <!--l//#lgx-OWL NEWS-->
 

@@ -1,10 +1,18 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
+use App\Providers\RouteServiceProvider;
+use Illuminate\Auth\Events\Registered;
 
-class HomeController extends Controller
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rules;
+
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +21,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
+
+     $response['useres']=   User::get();
+
+
+    return view('Admin.user.list.index',$response);
     }
 
     /**
@@ -23,7 +35,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+    return view('Admin.user.create.index');
     }
 
     /**
@@ -34,7 +46,21 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        event(new Registered($user));
+
+        return  redirect()->route('user.index');
     }
 
     /**
